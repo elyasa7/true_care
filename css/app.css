@@ -1,0 +1,178 @@
+body {
+	background: #EBEFF4;
+	font-size: 100%;
+	padding-left: 70px;
+}
+
+@media only screen and (max-width: 640px) {
+	body {
+		padding-left: 0px;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.card {
+	background-color: #fff;
+	padding: 20px 0px;
+}
+
+.custom-table thead{
+	background: #F4F7F9;
+	font-size: 12px;
+}
+
+.custom-table thead td{
+	color: #728B9B;
+	padding: 0.4rem 0.6rem 0.2rem 0.6rem;
+}
+
+.custom-table tbody tr{
+	padding: 15px 5px;
+	font-size: 14px;
+}
+
+.custom-table tbody tr td{
+	padding: 0.3rem 0.625rem 0.3rem;
+}
+
+.custom-table tbody{
+	color: #354650 !important;
+}
+
+.status-icon {
+	max-height: 12px;
+	padding-right: 5px;
+}
+
+.status-text {
+	border-bottom: 0.12em dashed #B8C5CD;
+	cursor: pointer;
+}
+
+.canceled-agent {
+	background: #ffe0e0 !important;
+}
+
+.text-white {
+	color: #ffffff !important;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+.margin-bottom-0 {
+	margin-bottom: 0px !important;
+}
+
+.table-header {
+	color: #354650 !important;
+	margin: 10px 10px 20px auto;
+}
+
+.text-14 {
+	font-size: 14px;
+}
+
+.status-dropdown {
+	max-width: 220px;
+	padding: 0px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 9px #9999;
+}
+
+.status-dropdown ul{
+	list-style: none;
+	margin: 0px;
+}
+
+.status-dropdown ul li{
+	font-size: 14px;
+	padding: 10px 15px;
+}
+
+.status-dropdown ul li.active{
+	background: #F4F7F9;
+}
+
+
+/* START STICKY TOP BAR */
+.top-bar-container {
+	z-index: 5;
+	padding-bottom: 30px;
+}
+.sticky-topbar {
+	padding-bottom: 30px;
+}
+
+.top-bar, .top-bar ul {
+	background-color: #FFFFFF;
+}
+
+.top-bar, .top-bar a{
+	color: #354650;
+	font-size: 12px;
+}
+
+.top-bar-link {
+	color: #354650 !important;
+}
+
+/*@media only screen and (max-width: 640px) {*/
+	/*.top-bar-container {*/
+		/*z-index: 5;*/
+		/*margin-left: 0px;*/
+	/*}*/
+
+	/*.sticky-topbar {*/
+		/*width: 100%;*/
+	/*}*/
+/*}*/
+/* END STICKY TOP BAR */
+
+/* START STICKY SIDEBAR */
+
+.sticky-nav-bar {
+	z-index: 10;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	width: 70px;
+	background-color: #264E66;
+	position: fixed;
+	left: 0rem;
+	height: 100%;
+}
+
+.sticky-nav-bar li:first-child {
+	padding-bottom: 30px;
+}
+
+.sticky-nav-bar li {
+	list-style: none;
+}
+
+.sticky-nav-bar .sticky-nav-bar-item {
+	padding: 15px 0px;
+	text-align: center;
+	color: #FFF;
+	font-size: 12px;
+}
+
+.sticky-nav-bar .sticky-nav-bar-item img{
+	float: none;
+}
+
+.sticky-nav-bar-text {
+	color: #FFFFFF;
+	padding: 5px 0px;
+}
+
+/* END STICKY SIDEBAR */

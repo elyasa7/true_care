@@ -16,26 +16,47 @@
 		<div class="top-bar">
 			<div class="top-bar-left">
 				<ul class="menu">
-					<li>
+					<li class="show-for-medium">
 						<a href="#">
 							<img src="images/back_1.png" class="status-icon">
 							<span class="top-bar-link hide-for-small-only">BACK</span>
 						</a>
 					</li>
-					<li><input type="search" placeholder="Search"></li>
-					<li>
-						<button type="button" class="button">Search</button>
+					<li class="hide-for-medium" style="padding-right: 20px;">
+						<button type="button" class="button side_menu_button">
+							Menu
+						</button>
+					</li>
+					<li  class="menu-search-list-item" style="padding-right: 20px;">
+						<input type="search" placeholder="Search" class="float-left">
+
 					</li>
 					<li>
+						<button type="button" class="button show-for-large">Search</button>
+						<button type="button" class="button hide-for-large">Search</button>
+					</li>
+					<li class="show-for-medium">
 						<a href="#">
 							<img src="images/fulfillment.png" class="status-icon">
-							<span class="top-bar-link hide-for-small-only">Fulfillment KPIs</span>
+							<span class="top-bar-link">Fulfillment KPIs</span>
 						</a>
 					</li>
 				</ul>
 			</div>
 			<div class="top-bar-right">
-				<ul class="dropdown menu" data-dropdown-menu>
+				<ul class="dropdown menu text-right float-right" data-dropdown-menu>
+					<li class="menu hide-for-medium" style="padding-left: 0px;">
+						<a href="#" style="padding: ">
+							<img src="images/back_1.png" class="status-icon">
+							<span class="top-bar-link">Back</span>
+						</a>
+					</li>
+					<li class="menu hide-for-medium">
+						<a href="#">
+							<img src="images/fulfillment.png" class="status-icon">
+							<span class="top-bar-link">Fulfillment</span>
+						</a>
+					</li>
 					<li class="has-submenu">
 						<a href="#">leo@truecare24.com</a>
 						<ul class="submenu menu vertical" data-submenu>
@@ -95,20 +116,21 @@
 				<td>
 					Type
 				</td>
-				<td>
+				<td class="show-for-medium">
 					Name
 				</td>
-				<td>
+				<td class="show-for-large">
 					E-mail
 				</td>
-				<td>
+				<td class="show-for-large">
 					Phone
 				</td>
-				<td>
+				<td class="show-for-large">
 					ID
 				</td>
 				<td>
-					Status
+					<span class="show-for-medium">Status</span>
+					<span class="hide-for-medium">Detailed information</span>
 				</td>
 				<td>
 
@@ -117,157 +139,164 @@
 			</thead>
 
 			<tbody class="custom-table-body">
-			<tr>
-				<td>
-					<img src="images/contracted.png" class="status-icon">
-					<img src="images/ic.png" class="status-icon">
-				</td>
-				<td>
-					Lucile Munoz
-				</td>
-				<td>
-					oceane.torp@brennan.us
-				</td>
-				<td>
-					+1 (727) 809-1539
-				</td>
-				<td>
-					7543
-				</td>
-				<td>
-					<img src="images/contacting_0.png" class="status-icon">
-					<span class="status-text">Contacting</span>
-				</td>
-				<td>
-					<button class="button text-white text-uppercase margin-bottom-0">
-						Chat
-					</button>
-					<button class="button success text-white text-uppercase margin-bottom-0">
-						Call
-					</button>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="images/contracted.png" class="status-icon">
-					<img src="images/ic.png" class="status-icon">
-				</td>
-				<td>
-					Winifred Henderson
-				</td>
-				<td>
-					landen_deckow@hotmail.com
-				</td>
-				<td>
-					+1 (532) 831-5321
-				</td>
-				<td>
-					9755
-				</td>
-				<td>
-					<img src="images/talked_to_the_client.png" class="status-icon">
-					<span class="status-text" data-toggle="status-dropdown">Talked to the client</span>
-				</td>
-				<td>
-					<button class="button text-white text-uppercase margin-bottom-0">
-						Chat
-					</button>
-					<button class="button success text-white text-uppercase margin-bottom-0">
-						Call
-					</button>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="images/non_contracted.png" class="status-icon">
-					<img src="images/ic.png" class="status-icon">
-				</td>
-				<td>
-					Birdie Carson
-				</td>
-				<td>
-					dietrich_amiya@yahoo.com
-				</td>
-				<td>
-					+1 (673) 223-7397
-				</td>
-				<td>
-					3421
-				</td>
-				<td>
-					<img src="images/assessment.png" class="status-icon">
-					<span class="status-text">Assessment scheduled</span>
-				</td>
-				<td>
-					<button class="button text-white text-uppercase margin-bottom-0">
-						Chat
-					</button>
-					<button class="button success text-white text-uppercase margin-bottom-0">
-						Call
-					</button>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="images/non_contracted.png" class="status-icon">
-					<img src="images/home_care_agency.png" class="status-icon">
-				</td>
-				<td>
-					Family Care SF, Inc.
-				</td>
-				<td>
-					dorothy.lesch@dickinson.me
-				</td>
-				<td>
-					+1 (866) 124-5438
-				</td>
-				<td>
-					7675
-				</td>
-				<td>
-					<img src="images/contract_signed.png" class="status-icon">
-					<span class="status-text">Contract Signed</span>
-				</td>
-				<td>
-					<button class="button text-white text-uppercase margin-bottom-0">
-						Chat
-					</button>
-					<button class="button success text-white text-uppercase margin-bottom-0">
-						Call
-					</button>
-				</td>
-			</tr>
-
-			<tr class="callout alert">
-				<td>
-					<img src="images/contracted.png" class="status-icon">
-					<img src="images/ic.png" class="status-icon">
-				</td>
-				<td>
-					Barry Alexander
-				</td>
-				<td>
-					reilly.julius@gmail.com
-				</td>
-				<td>
-					+1 (885) 163-9766
-				</td>
-				<td>
-					5553
-				</td>
-				<td>
-					<img src="images/cancel_client.png" class="status-icon">
-					<span class="status-text">Cancel the Client</span>
-				</td>
-				<td>
-					<button class="button text-white text-uppercase margin-bottom-0">
-						Chat
-					</button>
-					<button class="button success text-white text-uppercase margin-bottom-0">
-						Call
-					</button>
-				</td>
-			</tr>
+<!--			<tr>-->
+<!--				<td>-->
+<!--					<p class="hide-for-large">7543</p>-->
+<!--					<div>-->
+<!--					<img src="images/contracted.png" class="status-icon float-left">-->
+<!--					<img src="images/ic.png" class="status-icon float-left">-->
+<!--					</div>-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					Lucile Munoz<br>-->
+<!--					<span class="hide-for-large">oceane.torp@brennan.us</span>-->
+<!--				</td>-->
+<!--				<td class="show-for-large">-->
+<!--					oceane.torp@brennan.us-->
+<!--				</td>-->
+<!--				<td class="show-for-large">-->
+<!--					+1 (727) 809-1539-->
+<!--				</td>-->
+<!--				<td class="show-for-large">-->
+<!--					7543-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					<span class="hide-for-large">+1 (727) 809-1539<br></span>-->
+<!---->
+<!--					<img src="images/contacting_0.png" class="status-icon">-->
+<!--					<span class="status-text">Contacting</span>-->
+<!---->
+<!--				</td>-->
+<!--				<td>-->
+<!--					<button class="button text-white text-uppercase margin-bottom-0 float-left">-->
+<!--						Chat-->
+<!--					</button>-->
+<!--					<button class="button success text-white text-uppercase margin-bottom-0 float-left">-->
+<!--						Call-->
+<!--					</button>-->
+<!--				</td>-->
+<!--			</tr>-->
+<!--			<tr>-->
+<!--				<td>-->
+<!--					<img src="images/contracted.png" class="status-icon">-->
+<!--					<img src="images/ic.png" class="status-icon">-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					Winifred Henderson-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					landen_deckow@hotmail.com-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					+1 (532) 831-5321-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					9755-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					<img src="images/talked_to_the_client.png" class="status-icon">-->
+<!--					<span class="status-text" data-toggle="status-dropdown">Talked to the client</span>-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					<button class="button text-white text-uppercase margin-bottom-0">-->
+<!--						Chat-->
+<!--					</button>-->
+<!--					<button class="button success text-white text-uppercase margin-bottom-0">-->
+<!--						Call-->
+<!--					</button>-->
+<!--				</td>-->
+<!--			</tr>-->
+<!--			<tr>-->
+<!--				<td>-->
+<!--					<img src="images/non_contracted.png" class="status-icon">-->
+<!--					<img src="images/ic.png" class="status-icon">-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					Birdie Carson-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					dietrich_amiya@yahoo.com-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					+1 (673) 223-7397-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					3421-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					<img src="images/assessment.png" class="status-icon">-->
+<!--					<span class="status-text">Assessment scheduled</span>-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					<button class="button text-white text-uppercase margin-bottom-0">-->
+<!--						Chat-->
+<!--					</button>-->
+<!--					<button class="button success text-white text-uppercase margin-bottom-0">-->
+<!--						Call-->
+<!--					</button>-->
+<!--				</td>-->
+<!--			</tr>-->
+<!--			<tr>-->
+<!--				<td>-->
+<!--					<img src="images/non_contracted.png" class="status-icon">-->
+<!--					<img src="images/home_care_agency.png" class="status-icon">-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					Family Care SF, Inc.-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					dorothy.lesch@dickinson.me-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					+1 (866) 124-5438-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					7675-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					<img src="images/contract_signed.png" class="status-icon">-->
+<!--					<span class="status-text">Contract Signed</span>-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					<button class="button text-white text-uppercase margin-bottom-0">-->
+<!--						Chat-->
+<!--					</button>-->
+<!--					<button class="button success text-white text-uppercase margin-bottom-0">-->
+<!--						Call-->
+<!--					</button>-->
+<!--				</td>-->
+<!--			</tr>-->
+<!---->
+<!--			<tr class="callout alert">-->
+<!--				<td>-->
+<!--					<img src="images/contracted.png" class="status-icon">-->
+<!--					<img src="images/ic.png" class="status-icon">-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					Barry Alexander-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					reilly.julius@gmail.com-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					+1 (885) 163-9766-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					5553-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					<img src="images/cancel_client.png" class="status-icon">-->
+<!--					<span class="status-text">Cancel the Client</span>-->
+<!--				</td>-->
+<!--				<td>-->
+<!--					<button class="button text-white text-uppercase margin-bottom-0">-->
+<!--						Chat-->
+<!--					</button>-->
+<!--					<button class="button success text-white text-uppercase margin-bottom-0">-->
+<!--						Call-->
+<!--					</button>-->
+<!--				</td>-->
+<!--			</tr>-->
 
 			<?php
 
@@ -329,6 +358,31 @@
 			}
 		});
 		});
+</script>
+
+<script>
+	$(document).on('click', '.side_menu_button', function () {
+		var side_menu = $('.sticky-nav-bar');
+		//var side_menu = $('.side_menu_button').text();
+
+		//side_menu.css( "color", "red", 'display', 'inherit !important', 'margin-top',  '50px');
+		//side_menu.css( "color", "red", 'display', 'inherit !important', 'margin-top',  '50px');
+		//alert('123123');
+
+
+		var attr = side_menu.attr('style');
+
+// For some browsers, `attr` is undefined; for others,
+// `attr` is false.  Check for both.
+		if (typeof attr !== typeof undefined && attr !== false) {
+			side_menu.removeAttr("style");
+		}
+		else {
+			side_menu.attr("style", "display: inherit !important; margin-top: 48px;");
+		}
+
+
+	});
 </script>
 
 

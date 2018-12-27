@@ -10,6 +10,12 @@ body {
 	}
 }
 
+@media only screen and (max-width: 420px) {
+	.menu-search-list-item {
+		width: 40%;
+	}
+}
+
 .hidden {
 	display: none;
 }
@@ -116,13 +122,32 @@ body {
 	background-color: #FFFFFF;
 }
 
+.top-bar li {
+	padding-right: 10px;
+}
+
+.top-bar li:first-child {
+	padding-left: 20px;
+}
+
+.dropdown.menu > li > a {
+	padding: 0.7rem 0.5rem;
+}
+
 .top-bar, .top-bar a{
 	color: #354650;
 	font-size: 12px;
+	padding: 10px 0px;
 }
 
 .top-bar-link {
 	color: #354650 !important;
+}
+
+.side_menu_button {
+	background: #264E66;
+	border-radius: 0;
+	width: 70px;
 }
 
 /*@media only screen and (max-width: 640px) {*/

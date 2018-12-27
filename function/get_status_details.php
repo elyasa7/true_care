@@ -22,29 +22,40 @@ function get_item($id)
 	return
 		'<tr class="' . $row_class . ' ' . $row_indentifier . '">' .
 		'<td>' .
+		'<p class="hide-for-large text-center">' . $response['id'] . '</p>' .
+		'<div class="text-center">' .
 		'<img src="images/contracted.png" class="status-icon">' .
 		'<img src="images/ic.png" class="status-icon">' .
 		'</td>' .
-		'<td>' .
-		$response['agent_first_name'] . ' ' . $response['agent_last_name'] .
+		'<td class="show-for-medium">' .
+		$response['agent_first_name'] . ' ' . $response['agent_last_name'] . '<br>' .
+		'<span class="hide-for-large">' . $response['agent_email'] . '</span>' .
 		'</td>' .
-		'<td>' .
+		'<td class="show-for-large">' .
 		$response['agent_email'] .
 		'</td>' .
-		'<td>' .
+		'<td class="show-for-large">' .
 		$response['agent_phone'] .
 		'</td>' .
-		'<td>' .
+		'<td class="show-for-large">' .
 		$response['id'] .
 		'</td>' .
 		'<td class="agent-status-wrapper">' .
+
+		'<span class="hide-for-medium">' .
+		$response['agent_first_name'] . ' ' . $response['agent_last_name'] .
+		'<br></span>' .
+
+		'<span class="hide-for-medium">' . $response['agent_email'] . '<br></span>' .
+		'<span class="hide-for-large">' . $response['agent_phone'] . '<br></span>' .
 		$status_content .
 		'</td>' .
 		'<td>' .
-		'<button class="button text-white text-uppercase margin-bottom-0">' .
+		'<button class="button tiny text-white text-uppercase margin-bottom-0">' .
 		'Chat' .
 		'</button>' .
-		'<button class="button success text-white text-uppercase margin-bottom-0 make_call">' .
+		'<br class="hide-for-medium">' .
+		'<button class="button tiny success text-white text-uppercase margin-bottom-0 make_call">' .
 		'<span class="phone_to_call" style="display: none;">' . $response['agent_phone'] . '</span>'.
 		'Call' .
 		'</button>' .
